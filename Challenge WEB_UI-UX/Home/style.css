@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #00142e,
+    #041764 10% 90%,
+    #00142e
+  );
+  color: #fff;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.BActive {
+  backdrop-filter: blur(3px);
+  filter: blur(3px) brightness(50%);
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: #00142e00;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 40%;
+  justify-content: space-around;
+  font-size: large;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #d31212;
+}
+nav > a {
+  height: 90%;
+  width: 100px;
+  margin-left: 10px;
+}
+nav img {
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  background-image: url("/images/ITC\ Talks\ header\(2\)-min.png");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  background-size: cover;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%);
+}
+.header h1 {
+  position: relative;
+  top: -100px;
+  width: 100vw;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 2px 8px #041764;
+}
+
+#countdown div {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 2px 8px #041764;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 60px;
+}
+
+.Dont-miss {
+  width: 50%;
+}
+
+p {
+  line-height: 20px;
+}
+
+#registerbtn {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+button {
+  width: 20vw;
+  height: 8vh;
+  border-radius: 8px;
+  background-color: #d31212;
+  color: #fff;
+  font-size: 100%;
+  font-weight: bold;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+#registerBtn:hover {
+  background-color: #04176400;
+  box-shadow: 0 0 10px 5px #d31212;
+}
+
+.hr {
+  background-color: #fff;
+  height: 3px;
+  width: 70%;
+  border-radius: 10px;
+  margin: 100px auto;
+}
+
+section {
+  margin: 70px 60px;
+}
+.editions {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+.info p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+}
+.contact p {
+  font-size: 16px;
+}
+.bi-tiktok:hover {
+  color: #000;
+  text-shadow: 2.5px 2.5px #69c9d0, -2.5px -2.5px #ee1d52;
+}
+.bi-instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bi-facebook:hover {
+  color: #3b5998;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bi-linkedin:hover {
+  color: #0072b1;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bi-discord:hover {
+  color: #5865f2;
+  border-radius: 20px;
+}
+
+.bi-envelope-at:hover {
+  color: #d31212;
+}
+
+#contact {
+  padding-bottom: 20px;
+}
+.img-popup {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 80vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: #041764;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.PActive {
+  visibility: visible;
+}
+
+.bi-x-lg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.bi-x-lg:hover {
+  color: #d31212;
+}
+
+#carouselExampleFade {
+  width: 90%;
+}
+#carouselExampleFade button {
+  margin: auto 0;
+}
+#carouselExampleFade2 {
+  width: 90%;
+}
+#carouselExampleFade2 button {
+  margin: auto 0;
+}
+#carouselExampleFade3 {
+  width: 90%;
+}
+#carouselExampleFade3 button {
+  margin: auto 0;
+}
+.d-block {
+  height: 100%;
+}
+.carousel-item {
+  max-height: 78vh;
+  border-radius: 10px;
+}
+
+#aup {
+  color: inherit;
+}
+.up {
+  background-color: hsla(228, 92%, 20%, 0.2);
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border: solid;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+.up:hover {
+  color: #d31212;
+}
+
+@media (max-width: 675px) {
+  .editions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
